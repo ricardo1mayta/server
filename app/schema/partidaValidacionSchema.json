@@ -1,0 +1,48 @@
+{
+  "getSchema": {
+    "type": "object",
+    "required": ["id"],
+    "properties": {
+      "id": {
+        "type": "string"
+      }
+    }
+  },
+  "postSchema": {
+    "type": "object",
+    "required": ["idorganiza", "descripcion"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "idorganiza": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "descripcion": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "costo": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "total": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+
+      "maximojugadores": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10
+      }
+    }
+  }
+}

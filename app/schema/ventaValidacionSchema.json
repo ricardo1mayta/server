@@ -1,0 +1,119 @@
+{
+  "getSchema": {
+    "type": "object",
+    "required": ["id"],
+    "properties": {
+      "id": {
+        "type": "string"
+      }
+    }
+  },
+  "postSchema": {
+    "type": "object",
+    "required": ["total_gravadas"],
+    "properties": {
+      "tipo_operacion": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_gravadas": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_inafecta": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_exoneradas": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "total_gratuitas": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_exportacion": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "total_descuento": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "sub_total": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "porcentaje_igv": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_igv": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_isc": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_otr_imp": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "total_letras": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "nro_guia_remision": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cod_guia_remision": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "nro_otr_comprobante": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "serie_comprobante": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "numero_comprobante": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "fecha_comprobante": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "fecha_vto_comprobante": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cod_tipo_documento": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cod_moneda": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "cliente_numerodocumento": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cliente_nombre": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "cliente_tipodocumento": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cliente_direccion": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cliente_pais": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "cliente_ciudad": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "cliente_codigoubigeo": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cliente_departamento": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cliente_provincia": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "cliente_distrito": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "tipo_proceso": { "type": "string", "minLength": 1, "maxLength": 500 }
+    }
+  }
+}

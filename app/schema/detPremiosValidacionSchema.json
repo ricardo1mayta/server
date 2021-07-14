@@ -1,0 +1,37 @@
+{
+  "getSchema": {
+    "type": "object",
+    "required": ["id"],
+    "properties": {
+      "id": {
+        "type": "string"
+      }
+    }
+  },
+  "postSchema": {
+    "type": "object",
+    "required": ["idpartida", "monto"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "idpartida": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10
+      },
+      "monto": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10
+      },
+      "descripcion": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    }
+  }
+}

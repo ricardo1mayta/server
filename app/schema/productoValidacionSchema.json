@@ -1,0 +1,137 @@
+{
+    "getSchema": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+            "id": {
+                "type": "string"
+            }
+        }
+    },
+    "postSchema": {
+        "type": "object",
+        "required": ["descripcion"],
+        "properties": {
+            "id": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "descripcion": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 1000
+            },
+            "categoria": {
+                "type": "number",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "imagen": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "preciocompra": {
+                "type": "number",
+                "multipleOfPrecision": 0.01
+            },
+            "preciounitario": {
+                "type": "number",
+                "multipleOfPrecision": 0.01
+            },
+            "codigo": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "sku": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "medida": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "tipoafetacion": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "adddate": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "idusercreate": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "editdate": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "iduserupdate": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "status": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "sede": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45
+            },
+            "descc": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45000
+            },
+            "descl": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 45000
+            },
+            "precio1": {
+                "type": "number",
+                "multipleOfPrecision": 0.01
+            },
+            "precio2": {
+                "type": "number",
+                "multipleOfPrecision": 0.01
+            },
+            "precio3": {
+                "type": "number",
+                "multipleOfPrecision": 0.01
+            },
+            "img1": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 500
+            },
+            "img2": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 500
+            },
+            "img3": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 500
+            },
+            "img4": {
+                "type": "string",
+                "minLength": 0,
+                "maxLength": 500
+            }
+        }
+    }
+}

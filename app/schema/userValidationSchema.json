@@ -1,0 +1,63 @@
+{
+  "getSchema": {
+    "type": "object",
+    "required": ["id"],
+    "properties": {
+      "id": {
+        "type": "string"
+      }
+    }
+  },
+  "postSchema": {
+    "type": "object",
+    "required": ["email", "password"],
+    "properties": {
+      "email": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "password": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "firtsName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "lastName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 45
+      },
+      "telefono": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 150
+      },
+
+      "status": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10
+      },
+      "img": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "rol": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10
+      },
+      "parent": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10
+      }
+    }
+  }
+}
