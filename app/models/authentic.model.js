@@ -14,7 +14,7 @@ var authenticModel = {
 
 function authentic(authenticData) {
     return new Promise((resolve, reject) => {
-        db.query(`SELECT * from user a WHERE a.status=1 and a.email='${authenticData.email}'`, (error, rows, fields) => {
+        db.query("select a.addDate,a.email,a.firtsName,a.id,a.img,a.lastName,a.parent, a.password,a.rol,a.sede,a.status,a.subsede,a.telefono,b.nombressede,c.nombrerol from user a inner join sudsedes b on b.idssede = a.subsede inner join roles c on c.idrol=a.rol WHERE a.status=1 and a.email='"+ authenticData.email+"'", (error, rows, fields) => {
             if (error) {
                 reject(error);
             } else {
